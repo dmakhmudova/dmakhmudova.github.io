@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+
+.column.side {
+    width: 30%;
+}
+
+
+.column.middle {
+    width: 40%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+
+.footer {
+    background-color: #223232;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>MAKHMUDOVA DINORA</h1>
+  <p>Ms.Dinora studied at academic lyceum under UWED and graduated in 2016.She has enrolled to IUT in 2017. Now Ms. dinora is studying in the first course of IUT</p>
+</div>
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="movies.html">Movies</a>
+  
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>What things I like most!</h2>
+    <h3>
+      <ul>
+        <li>
+          Sport(Taekwondo)
+
+        </li>
+<li>
+  Reading books
+</li>
+<li>
+  Singing
+</li>
+      </ul>
+    </h3>
+  </div>
+  <div class="column middle">
+    <h3><img src="1234.jpg" width="400"></h3>
+    <p></p>
+    
+  </div>
+  <div class="column side">
+    <h2>About Study life</h2>
+    <h3>
+      I study at SOCIE Faculty of IUT
+            <br>Student ID:U1710175
+              <br>SOCIE 17-08(002)
+              <br>Contact:<a href="mail.inha.uz">d.makhmudova@student.inha.uz</a>
+            <br></h3>
+  </div>
+</div>
+
+
+<h2 align="center">Register to my Homepage to get more information</h2>
+
+<form action="http://telegram.me/d_6072esor_eulb" style="border:1px solid #ccc">
+  <div class="container">
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <input type="checkbox" checked="checked"> Remember me
+    <p>By creating an account you agree to our <a href="http://telegram.me/d_6072esor_eulb">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+  <div class="footer">
+  <h4>Copyright 2017</h4>
+</div>
+</body>
+</html>
